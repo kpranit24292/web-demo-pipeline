@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/kpranit24292/web-demo-pipeline.git'
+                git url: 'https://github.com/kpranit24292/web-demo-pipeline.git', branch: 'main'
+
             }
         }
         stage('Build') {
